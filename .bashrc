@@ -91,6 +91,22 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias lla='ls -alF --color'
+alias c='clear'
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+alias mkdir='mkdir -pv'
+alias update='sudo apt-get update && sudo apt-get upgrade'
+alias cpuinfo='lscpu'
+alias sha='shasum -a 256 '
+alias ping='ping -c 5'
+alias gh='history|grep'
+alias ve='python3 -m venv ./venv'
+alias va='source ./venv/bin/activate'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
