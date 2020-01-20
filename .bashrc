@@ -107,6 +107,7 @@ alias ping='ping -c 5'
 alias gh='history|grep'
 alias ve='python3 -m venv ./venv'
 alias va='source ./venv/bin/activate'
+alias vd='deactivate'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
