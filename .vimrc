@@ -133,15 +133,18 @@ set pastetoggle=<F11>
  
 " Indentation settings for using 4 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
-set shiftwidth=4
-set softtabstop=4
-set expandtab
+" set shiftwidth=4
+" set softtabstop=4
+" set expandtab
  
 " Indentation settings for using hard tabs for indent. Display tabs as
 " four characters wide.
-"set shiftwidth=4
-"set tabstop=4
- 
+set shiftwidth=4
+set tabstop=4
+
+" Personal color settings 
+set background=dark
+color desert
  
 "------------------------------------------------------------
 " Mappings {{{1
@@ -155,3 +158,6 @@ map Y y$
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
+
+" Map // to search for selected text
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
