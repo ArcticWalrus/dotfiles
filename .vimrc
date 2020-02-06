@@ -158,6 +158,8 @@ map Y y$
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
-
 " Map // to search for selected text
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+nnoremap H gT
+nnoremap L gt
+
