@@ -24,3 +24,21 @@ set number
 " Mouse usage
 set mouse=a
 
+" Settings for vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'https://github.com/frazrepo/vim-rainbow.git'
+Plug 'itchyny/lightline.vim'
+Plug 'ajh17/vimcompletesme'
+
+call plug#end()
+
+" Settings for rainbow brackets
+let g:rainbow_active = 1
+
+" Settings for lightline
+let g:lightline = { 'colorscheme': 'wombat' }
+set laststatus=2
+" Uncomment next line to make lightline disappear
+" set noshowmode
+
