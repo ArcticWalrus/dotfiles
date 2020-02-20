@@ -35,7 +35,7 @@ call plug#end()
 
 " Settings for rainbow brackets
 let g:rainbow_active = 1
-au FileType c,cpp,py,sh,bash,shell call rainbow#load()
+au FileType c,cpp,py,shell call rainbow#load()
 
 " Settings for lightline
 let g:lightline = { 'colorscheme': 'wombat' }
