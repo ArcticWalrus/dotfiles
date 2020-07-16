@@ -1,4 +1,5 @@
 # Aliases
+#alias curl='curl -4'
 alias ls='ls -F --color'
 alias ll='ls -AlF --color'
 alias la='ls -A --color'
