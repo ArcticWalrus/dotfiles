@@ -1,7 +1,8 @@
 # Aliases
-alias ll='ls -AlF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ls='ls -F --color'
+alias ll='ls -AlF --color'
+alias la='ls -A --color'
+alias l='ls -CF --color'
 alias lla='ls -AlF --color'
 alias llat='ls -AlFt --color'
 alias c='clear'
