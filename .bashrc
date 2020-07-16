@@ -13,7 +13,7 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
-PATH="$PATH:$HOME/go"
+PATH="$PATH:$HOME/go/bin"
 export PATH
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
