@@ -4,11 +4,13 @@ filetype plugin indent on
 syntax on
 set title
 
-" Tab settings
-set tabstop=8
-set softtabstop=8
-set shiftwidth=8
+" Default tab settings
+set tabstop=4
+set shiftwidth=4
 set noexpandtab
+
+" Tab settings for linux kernel
+:autocmd BufRead,BufNewFile /home/msj/projects/kernel setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab 
 
 " Color settings
 set background=dark
@@ -35,7 +37,7 @@ call plug#end()
 
 " Settings for rainbow brackets
 let g:rainbow_active = 1
-au FileType c,cpp,py,shell call rainbow#load()
+au FileType c,cpp,py,shell,go,js call rainbow#load()
 
 " Settings for lightline
 let g:lightline = { 'colorscheme': 'wombat' }
