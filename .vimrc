@@ -10,7 +10,7 @@ set shiftwidth=4
 set noexpandtab
 
 " Tab settings for linux kernel
-:autocmd BufRead,BufNewFile /home/msj/projects/kernel/* setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab 
+:autocmd BufRead,BufNewFile ~/projects/kernel/* setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab 
 
 " Color settings
 set background=dark
