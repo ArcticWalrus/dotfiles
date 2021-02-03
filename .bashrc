@@ -1,7 +1,7 @@
 # .bashrc
 
 # Updating my prompt
-PS1='[\w]\$'
+PS1='[\u@\w]\$'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -50,3 +50,6 @@ shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
+
+# cd to $HOME for WSL2 that starts terminal in c/Users
+cd
