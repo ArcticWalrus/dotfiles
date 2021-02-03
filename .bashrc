@@ -6,7 +6,14 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Updating my prompt
-PS1='[\u@\w]\$'
+if [ "$color_prompt" = yes ];
+then
+	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\[\033[01;34m\]\w\[\033[00m\]\$ '
+else
+	PS1='${debian_chroot:+($debian_chroot)}\u@\w\$ '
+fi
+
+#PS1='[\u@\w]\$'
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
