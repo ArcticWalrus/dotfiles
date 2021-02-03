@@ -1,12 +1,12 @@
 # .bashrc
 
-# Updating my prompt
-PS1='[\u@\w]\$'
-
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
+
+# Updating my prompt
+PS1='[\u@\w]\$'
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
