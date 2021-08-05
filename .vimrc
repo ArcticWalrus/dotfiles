@@ -17,7 +17,7 @@ set visualbell
 
 " Color settings
 set background=dark
-" color desert
+color desert
 
 " Switching between tabs easily
 nnoremap H gT
