@@ -68,3 +68,6 @@ export GOPROXY=https://proxy.golang.org
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
+
+# username@currentdirectory$
+PS1='\[\e[1;32m\]\u@\w\[\e[0m\]\$ '
