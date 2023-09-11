@@ -1,5 +1,11 @@
 # .bashrc
 
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
@@ -12,8 +18,6 @@ then
 else
 	PS1='${debian_chroot:+($debian_chroot)}\u@\w\$ '
 fi
-
-#PS1='[\u@\w]\$'
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
@@ -61,3 +65,6 @@ HISTFILESIZE=2000
 # Go Proxy for packages
 export GOPROXY=https://proxy.golang.org
 
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
