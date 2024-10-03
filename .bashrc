@@ -71,3 +71,28 @@ shopt -s checkwinsize
 
 # username@currentdirectory$
 PS1='\[\e[1;32m\]\u@\w\[\e[0m\]\$ '
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[ -f "/home/msj/.ghcup/env" ] && . "/home/msj/.ghcup/env" # ghcup-env
+
+# study stream aliases
+# Requires https://github.com/caarlos0/timer to be installed. spd-say should ship with your distro
+
+declare -A pomo_options
+pomo_options["work"]="45"
+pomo_options["break"]="10"
+
+pomodoro () {
+  if [ -n "$1" -a -n "${pomo_options["$1"]}" ]; then
+  val=$1
+  echo $val | lolcat
+  timer ${pomo_options["$val"]}m
+  spd-say "'$val' session done"
+  fi
+}
+
+alias wo="pomodoro 'work'"
+alias br="pomodoro 'break'"
